@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Cucumber project using k6 for UI performance testing on chromium browser.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "cucumber-js > logs/test-output.log 2>&1",
     "verify-k6": "k6 version"

@@ -1,5 +1,1 @@
-module.exports = {
-  default: ["--require step_definitions/**/*.js", "features/**/*.feature"].join(
-    " "
-  ),
-};
+export default ["--import step_definitions/**/*.js", "features/**/*.feature"].join(" ");

@@ -1,0 +1,648 @@
+Screenshots directory already exists: D:\Codebase\01082025\Performance_Testing_Cucumber_K6_Browser\screenshots
+🌐 Network Condition: WiFi Network Profile
+.💻 CPU Condition: High CPU Performance (No throttling)
+.=== STARTING SCENARIO: Load Google homepage and measure page load time ===
+🏷️ Associated Tags: @WIFI, @HighCPU
+🔧 Active Network Simulation: WiFi Network Profile
+🔧 Active CPU Simulation: High CPU Performance (No throttling)
+..Running k6 with TEST_URL="https://www.google.com"
+time="2025-08-01T21:57:47+05:30" level=info msg="[INFO] [16:27:47] [VU 1] [Iter 0] 🚀 Starting k6 UI Performance Test" source=console
+time="2025-08-01T21:57:47+05:30" level=info msg="[INFO] [16:27:47] [VU 1] [Iter 0] 📋 Test URL: https://www.google.com" source=console
+time="2025-08-01T21:57:47+05:30" level=info msg="[INFO] [16:27:47] [VU 1] [Iter 0] 👥 VUs: 1, Iterations: 1" source=console
+time="2025-08-01T21:57:47+05:30" level=info msg="[INFO] [16:27:47] [VU 1] [Iter 0] ⚙️ Features - Screenshots: true, Network Logging: true, Highlighting: true" source=console
+time="2025-08-01T21:57:47+05:30" level=info msg="[INFO] [16:27:47] [VU 1] [Iter 0] ✅ Environment validation completed" source=console
+time="2025-08-01T21:57:47+05:30" level=info msg="[INFO] [16:27:47] [VU 1] [Iter 0] 🌐 HTTP Status: 200 (✅)" source=console
+time="2025-08-01T21:57:47+05:30" level=info msg="[INFO] [16:27:47] [VU 1] [Iter 0] ⏱️ HTTP Response: 212.2524ms (✅)" source=console
+time="2025-08-01T21:57:48+05:30" level=info msg="[INFO] [16:27:48] [VU 1] [Iter 0] 🚀 Navigating to: https://www.google.com" source=console
+time="2025-08-01T21:57:48+05:30" level=info msg="[INFO] [16:27:48] [VU 1] [Iter 0] 🚀 Measuring page performance" source=console
+time="2025-08-01T21:57:50+05:30" level=info msg="[INFO] [16:27:50] [VU 1] [Iter 0] 🚀 Page performance - DOM: 3ms, Network: 1893ms, Total: 1896ms" source=console
+time="2025-08-01T21:57:51+05:30" level=info msg="[INFO] [16:27:51] [VU 1] [Iter 0] 📸 Screenshot saved: screenshots/2025-08-01T16-27-50_Load_Google_homepage_and_measu_WIFI_HighCPU_page_pass_VU1_Iter0.png (page/pass)" source=console
+time="2025-08-01T21:57:51+05:30" level=info msg="[INFO] [16:27:51] [VU 1] [Iter 0] 🚀 Page performance: 1896ms (Network idle: ✅)" source=console
+time="2025-08-01T21:57:51+05:30" level=info msg="[INFO] [16:27:51] [VU 1] [Iter 0] 📡 No API requests detected" source=console
+time="2025-08-01T21:57:51+05:30" level=info msg="[INFO] [16:27:51] [VU 1] [Iter 0] ✅ Test iteration completed in 3660ms" source=console
+time="2025-08-01T21:57:51+05:30" level=info msg="[INFO] [16:27:51] [VU 1] [Iter 0] 📊 Result: page measurement completed successfully" source=console
+k6 execution completed successfully
+k6 execution output for main page:
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: k6/ui_performance.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+              * ui: 1 iterations shared among 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m01.0s/10m0s  0/1 shared iters
+
+running (00m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m02.0s/10m0s  0/1 shared iters
+
+running (00m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m03.0s/10m0s  0/1 shared iters
+
+running (00m04.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m04.0s/10m0s  0/1 shared iters
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......................: 2       0.463223/s
+    checks_succeeded...................: 100.00% 2 out of 2
+    checks_failed......................: 0.00%   0 out of 2
+
+    ✓ HTTP status is 200
+    ✓ HTTP response time < 30000ms
+
+    CUSTOM
+    dom_content_loaded_time.................................................: avg=3ms      min=3ms      med=3ms      max=3ms      p(90)=3ms      p(95)=3ms     
+    main_page_load_time.....................................................: avg=1.89s    min=1.89s    med=1.89s    max=1.89s    p(90)=1.89s    p(95)=1.89s   
+    network_idle_time.......................................................: avg=1.89s    min=1.89s    med=1.89s    max=1.89s    p(90)=1.89s    p(95)=1.89s   
+
+    HTTP
+    http_req_duration.......................................................: avg=212.25ms min=212.25ms med=212.25ms max=212.25ms p(90)=212.25ms p(95)=212.25ms
+      { expected_response:true }............................................: avg=212.25ms min=212.25ms med=212.25ms max=212.25ms p(90)=212.25ms p(95)=212.25ms
+    http_req_failed.........................................................: 0.00%  0 out of 1
+    http_reqs...............................................................: 1      0.231611/s
+
+    EXECUTION
+    iteration_duration......................................................: avg=3.73s    min=3.73s    med=3.73s    max=3.73s    p(90)=3.73s    p(95)=3.73s   
+    iterations..............................................................: 1      0.231611/s
+    vus.....................................................................: 1      min=1       max=1
+    vus_max.................................................................: 1      min=1       max=1
+
+    NETWORK
+    data_received...........................................................: 25 kB  5.9 kB/s
+    data_sent...............................................................: 703 B  163 B/s
+
+    BROWSER
+    browser_data_received...................................................: 2.5 MB 575 kB/s
+    browser_data_sent.......................................................: 24 kB  5.5 kB/s
+    browser_http_req_duration...............................................: avg=114.35ms min=8.48ms   med=91.21ms  max=488.73ms p(90)=262.68ms p(95)=328.44ms
+    browser_http_req_failed.................................................: 0.00%  0 out of 38
+
+    WEB_VITALS
+    browser_web_vital_cls...................................................: avg=0        min=0        med=0        max=0        p(90)=0        p(95)=0       
+    browser_web_vital_fcp...................................................: avg=588ms    min=588ms    med=588ms    max=588ms    p(90)=588ms    p(95)=588ms   
+    browser_web_vital_lcp...................................................: avg=1.12s    min=1.12s    med=1.12s    max=1.12s    p(90)=1.12s    p(95)=1.12s   
+    browser_web_vital_ttfb..................................................: avg=261.79ms min=261.79ms med=261.79ms max=261.79ms p(90)=261.79ms p(95)=261.79ms
+
+
+
+
+running (00m04.3s), 0/1 VUs, 1 complete and 0 interrupted iterations
+ui   ✓ [ 100% ] 1 VUs  00m04.3s/10m0s  1/1 shared iters
+
+.Main page load time: 1.89s (limit: 5s)
+.=== COMPLETED SCENARIO: Load Google homepage and measure page load time - STATUS: PASSED ===
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+.🌐 Network Condition: Regular 4G Network Profile
+.💻 CPU Condition: Low CPU Performance (4x throttling)
+.=== STARTING SCENARIO: Load Google homepage and measure page load time with 4G and CPU throttling ===
+🏷️ Associated Tags: @4G, @LowCPU
+🔧 Active Network Simulation: Regular 4G Network Profile
+🔧 Active CPU Simulation: Low CPU Performance (4x throttling)
+..Running k6 with TEST_URL="https://www.google.com"
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] 🚀 Starting k6 UI Performance Test" source=console
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] 📋 Test URL: https://www.google.com" source=console
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] 👥 VUs: 1, Iterations: 1" source=console
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] ⚙️ Features - Screenshots: true, Network Logging: true, Highlighting: true" source=console
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] ✅ Environment validation completed" source=console
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] 🌐 HTTP Status: 200 (✅)" source=console
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] ⏱️ HTTP Response: 201.5245ms (✅)" source=console
+time="2025-08-01T21:57:52+05:30" level=info msg="[INFO] [16:27:52] [VU 1] [Iter 0] 🚀 Navigating to: https://www.google.com" source=console
+time="2025-08-01T21:57:53+05:30" level=info msg="[INFO] [16:27:53] [VU 1] [Iter 0] 🌐 Applying 4G network simulation" source=console
+time="2025-08-01T21:57:53+05:30" level=warning msg="[WARN] [16:27:53] [VU 1] [Iter 0] Could not apply simulation conditions: Object has no member 'emulateNetworkConditions'" source=console
+time="2025-08-01T21:57:53+05:30" level=info msg="[INFO] [16:27:53] [VU 1] [Iter 0] 🚀 Measuring page performance" source=console
+time="2025-08-01T21:57:55+05:30" level=info msg="[INFO] [16:27:55] [VU 1] [Iter 0] 🚀 Page performance - DOM: 1ms, Network: 1895ms, Total: 1896ms" source=console
+time="2025-08-01T21:57:55+05:30" level=info msg="[INFO] [16:27:55] [VU 1] [Iter 0] 📸 Screenshot saved: screenshots/2025-08-01T16-27-55_Load_Google_homepage_and_measu_4G_LowCPU_page_pass_VU1_Iter0.png (page/pass)" source=console
+time="2025-08-01T21:57:55+05:30" level=info msg="[INFO] [16:27:55] [VU 1] [Iter 0] 🚀 Page performance: 1896ms (Network idle: ✅)" source=console
+time="2025-08-01T21:57:55+05:30" level=info msg="[INFO] [16:27:55] [VU 1] [Iter 0] 📡 No API requests detected" source=console
+time="2025-08-01T21:57:55+05:30" level=info msg="[INFO] [16:27:55] [VU 1] [Iter 0] ✅ Test iteration completed in 3567ms" source=console
+time="2025-08-01T21:57:55+05:30" level=info msg="[INFO] [16:27:55] [VU 1] [Iter 0] 📊 Result: page measurement completed successfully" source=console
+k6 execution completed successfully
+k6 execution output for main page:
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: k6/ui_performance.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+              * ui: 1 iterations shared among 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m01.0s/10m0s  0/1 shared iters
+
+running (00m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m02.0s/10m0s  0/1 shared iters
+
+running (00m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m03.0s/10m0s  0/1 shared iters
+
+running (00m04.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m04.0s/10m0s  0/1 shared iters
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......................: 2       0.488472/s
+    checks_succeeded...................: 100.00% 2 out of 2
+    checks_failed......................: 0.00%   0 out of 2
+
+    ✓ HTTP status is 200
+    ✓ HTTP response time < 30000ms
+
+    CUSTOM
+    dom_content_loaded_time.................................................: avg=1ms      min=1ms      med=1ms      max=1ms      p(90)=1ms      p(95)=1ms     
+    main_page_load_time.....................................................: avg=1.89s    min=1.89s    med=1.89s    max=1.89s    p(90)=1.89s    p(95)=1.89s   
+    network_idle_time.......................................................: avg=1.89s    min=1.89s    med=1.89s    max=1.89s    p(90)=1.89s    p(95)=1.89s   
+
+    HTTP
+    http_req_duration.......................................................: avg=201.52ms min=201.52ms med=201.52ms max=201.52ms p(90)=201.52ms p(95)=201.52ms
+      { expected_response:true }............................................: avg=201.52ms min=201.52ms med=201.52ms max=201.52ms p(90)=201.52ms p(95)=201.52ms
+    http_req_failed.........................................................: 0.00%  0 out of 1
+    http_reqs...............................................................: 1      0.244236/s
+
+    EXECUTION
+    iteration_duration......................................................: avg=3.64s    min=3.64s    med=3.64s    max=3.64s    p(90)=3.64s    p(95)=3.64s   
+    iterations..............................................................: 1      0.244236/s
+    vus.....................................................................: 1      min=1       max=1
+    vus_max.................................................................: 1      min=1       max=1
+
+    NETWORK
+    data_received...........................................................: 25 kB  6.2 kB/s
+    data_sent...............................................................: 703 B  172 B/s
+
+    BROWSER
+    browser_data_received...................................................: 2.5 MB 606 kB/s
+    browser_data_sent.......................................................: 24 kB  5.8 kB/s
+    browser_http_req_duration...............................................: avg=98.97ms  min=10.85ms  med=80.26ms  max=314.13ms p(90)=216.53ms p(95)=251.16ms
+    browser_http_req_failed.................................................: 0.00%  0 out of 38
+
+    WEB_VITALS
+    browser_web_vital_cls...................................................: avg=0        min=0        med=0        max=0        p(90)=0        p(95)=0       
+    browser_web_vital_fcp...................................................: avg=584ms    min=584ms    med=584ms    max=584ms    p(90)=584ms    p(95)=584ms   
+    browser_web_vital_lcp...................................................: avg=1.11s    min=1.11s    med=1.11s    max=1.11s    p(90)=1.11s    p(95)=1.11s   
+    browser_web_vital_ttfb..................................................: avg=255.9ms  min=255.9ms  med=255.9ms  max=255.9ms  p(90)=255.9ms  p(95)=255.9ms 
+
+
+
+
+running (00m04.1s), 0/1 VUs, 1 complete and 0 interrupted iterations
+ui   ✓ [ 100% ] 1 VUs  00m04.1s/10m0s  1/1 shared iters
+
+.Main page load time: 1.89s (limit: 8s)
+.=== COMPLETED SCENARIO: Load Google homepage and measure page load time with 4G and CPU throttling - STATUS: PASSED ===
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+.🌐 Network Condition: Fast 3G Network Profile
+.=== STARTING SCENARIO: Load Google homepage and measure page load time with 3G network ===
+🏷️ Associated Tags: @3G
+🔧 Active Network Simulation: Fast 3G Network Profile
+..Running k6 with TEST_URL="https://www.google.com"
+time="2025-08-01T21:57:56+05:30" level=info msg="[INFO] [16:27:56] [VU 1] [Iter 0] 🚀 Starting k6 UI Performance Test" source=console
+time="2025-08-01T21:57:56+05:30" level=info msg="[INFO] [16:27:56] [VU 1] [Iter 0] 📋 Test URL: https://www.google.com" source=console
+time="2025-08-01T21:57:56+05:30" level=info msg="[INFO] [16:27:56] [VU 1] [Iter 0] 👥 VUs: 1, Iterations: 1" source=console
+time="2025-08-01T21:57:56+05:30" level=info msg="[INFO] [16:27:56] [VU 1] [Iter 0] ⚙️ Features - Screenshots: true, Network Logging: true, Highlighting: true" source=console
+time="2025-08-01T21:57:56+05:30" level=info msg="[INFO] [16:27:56] [VU 1] [Iter 0] ✅ Environment validation completed" source=console
+time="2025-08-01T21:57:56+05:30" level=info msg="[INFO] [16:27:56] [VU 1] [Iter 0] 🌐 HTTP Status: 200 (✅)" source=console
+time="2025-08-01T21:57:56+05:30" level=info msg="[INFO] [16:27:56] [VU 1] [Iter 0] ⏱️ HTTP Response: 196.8089ms (✅)" source=console
+time="2025-08-01T21:57:57+05:30" level=info msg="[INFO] [16:27:57] [VU 1] [Iter 0] 🚀 Navigating to: https://www.google.com" source=console
+time="2025-08-01T21:57:57+05:30" level=info msg="[INFO] [16:27:57] [VU 1] [Iter 0] 🌐 Applying 3G network simulation" source=console
+time="2025-08-01T21:57:57+05:30" level=warning msg="[WARN] [16:27:57] [VU 1] [Iter 0] Could not apply simulation conditions: Object has no member 'emulateNetworkConditions'" source=console
+time="2025-08-01T21:57:57+05:30" level=info msg="[INFO] [16:27:57] [VU 1] [Iter 0] 🚀 Measuring page performance" source=console
+time="2025-08-01T21:57:59+05:30" level=info msg="[INFO] [16:27:59] [VU 1] [Iter 0] 🚀 Page performance - DOM: 0ms, Network: 1943ms, Total: 1943ms" source=console
+time="2025-08-01T21:58:00+05:30" level=info msg="[INFO] [16:28:00] [VU 1] [Iter 0] 📸 Screenshot saved: screenshots/2025-08-01T16-27-59_Load_Google_homepage_and_measu_3G_page_pass_VU1_Iter0.png (page/pass)" source=console
+time="2025-08-01T21:58:00+05:30" level=info msg="[INFO] [16:28:00] [VU 1] [Iter 0] 🚀 Page performance: 1943ms (Network idle: ✅)" source=console
+time="2025-08-01T21:58:00+05:30" level=info msg="[INFO] [16:28:00] [VU 1] [Iter 0] 📡 No API requests detected" source=console
+time="2025-08-01T21:58:00+05:30" level=info msg="[INFO] [16:28:00] [VU 1] [Iter 0] ✅ Test iteration completed in 3619ms" source=console
+time="2025-08-01T21:58:00+05:30" level=info msg="[INFO] [16:28:00] [VU 1] [Iter 0] 📊 Result: page measurement completed successfully" source=console
+k6 execution completed successfully
+k6 execution output for main page:
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: k6/ui_performance.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+              * ui: 1 iterations shared among 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m01.0s/10m0s  0/1 shared iters
+
+running (00m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m02.0s/10m0s  0/1 shared iters
+
+running (00m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m03.0s/10m0s  0/1 shared iters
+
+running (00m04.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m04.0s/10m0s  0/1 shared iters
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......................: 2       0.484551/s
+    checks_succeeded...................: 100.00% 2 out of 2
+    checks_failed......................: 0.00%   0 out of 2
+
+    ✓ HTTP status is 200
+    ✓ HTTP response time < 30000ms
+
+    CUSTOM
+    dom_content_loaded_time.................................................: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    main_page_load_time.....................................................: avg=1.94s    min=1.94s    med=1.94s    max=1.94s    p(90)=1.94s    p(95)=1.94s   
+    network_idle_time.......................................................: avg=1.94s    min=1.94s    med=1.94s    max=1.94s    p(90)=1.94s    p(95)=1.94s   
+
+    HTTP
+    http_req_duration.......................................................: avg=196.8ms  min=196.8ms  med=196.8ms  max=196.8ms  p(90)=196.8ms  p(95)=196.8ms 
+      { expected_response:true }............................................: avg=196.8ms  min=196.8ms  med=196.8ms  max=196.8ms  p(90)=196.8ms  p(95)=196.8ms 
+    http_req_failed.........................................................: 0.00%  0 out of 1
+    http_reqs...............................................................: 1      0.242276/s
+
+    EXECUTION
+    iteration_duration......................................................: avg=3.69s    min=3.69s    med=3.69s    max=3.69s    p(90)=3.69s    p(95)=3.69s   
+    iterations..............................................................: 1      0.242276/s
+    vus.....................................................................: 1      min=1       max=1
+    vus_max.................................................................: 1      min=1       max=1
+
+    NETWORK
+    data_received...........................................................: 25 kB  6.1 kB/s
+    data_sent...............................................................: 703 B  170 B/s
+
+    BROWSER
+    browser_data_received...................................................: 2.5 MB 600 kB/s
+    browser_data_sent.......................................................: 24 kB  5.7 kB/s
+    browser_http_req_duration...............................................: avg=95.12ms  min=13.18ms  med=79.54ms  max=325.04ms p(90)=192.1ms  p(95)=230.27ms
+    browser_http_req_failed.................................................: 0.00%  0 out of 38
+
+    WEB_VITALS
+    browser_web_vital_cls...................................................: avg=0        min=0        med=0        max=0        p(90)=0        p(95)=0       
+    browser_web_vital_fcp...................................................: avg=552ms    min=552ms    med=552ms    max=552ms    p(90)=552ms    p(95)=552ms   
+    browser_web_vital_lcp...................................................: avg=1.03s    min=1.03s    med=1.03s    max=1.03s    p(90)=1.03s    p(95)=1.03s   
+    browser_web_vital_ttfb..................................................: avg=228.69ms min=228.69ms med=228.69ms max=228.69ms p(90)=228.69ms p(95)=228.69ms
+
+
+
+
+running (00m04.1s), 0/1 VUs, 1 complete and 0 interrupted iterations
+ui   ✓ [ 100% ] 1 VUs  00m04.1s/10m0s  1/1 shared iters
+
+.Main page load time: 1.94s (limit: 12s)
+.=== COMPLETED SCENARIO: Load Google homepage and measure page load time with 3G network - STATUS: PASSED ===
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+.🌐 Network Condition: WiFi Network Profile
+.💻 CPU Condition: Low CPU Performance (4x throttling)
+.=== STARTING SCENARIO: Load Google homepage and measure page load time with CPU throttling ===
+🏷️ Associated Tags: @WIFI, @LowCPU
+🔧 Active Network Simulation: WiFi Network Profile
+🔧 Active CPU Simulation: Low CPU Performance (4x throttling)
+..Running k6 with TEST_URL="https://www.google.com"
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] 🚀 Starting k6 UI Performance Test" source=console
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] 📋 Test URL: https://www.google.com" source=console
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] 👥 VUs: 1, Iterations: 1" source=console
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] ⚙️ Features - Screenshots: true, Network Logging: true, Highlighting: true" source=console
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] ✅ Environment validation completed" source=console
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] 🌐 HTTP Status: 200 (✅)" source=console
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] ⏱️ HTTP Response: 200.9613ms (✅)" source=console
+time="2025-08-01T21:58:01+05:30" level=info msg="[INFO] [16:28:01] [VU 1] [Iter 0] 🚀 Navigating to: https://www.google.com" source=console
+time="2025-08-01T21:58:02+05:30" level=info msg="[INFO] [16:28:02] [VU 1] [Iter 0] 💻 Applying LowCPU CPU simulation (4x throttling)" source=console
+time="2025-08-01T21:58:02+05:30" level=warning msg="[WARN] [16:28:02] [VU 1] [Iter 0] Could not apply simulation conditions: Object has no member 'emulateCPUThrottling'" source=console
+time="2025-08-01T21:58:02+05:30" level=info msg="[INFO] [16:28:02] [VU 1] [Iter 0] 🚀 Measuring page performance" source=console
+time="2025-08-01T21:58:04+05:30" level=info msg="[INFO] [16:28:04] [VU 1] [Iter 0] 🚀 Page performance - DOM: 0ms, Network: 1699ms, Total: 1699ms" source=console
+time="2025-08-01T21:58:04+05:30" level=info msg="[INFO] [16:28:04] [VU 1] [Iter 0] 📸 Screenshot saved: screenshots/2025-08-01T16-28-04_Load_Google_homepage_and_measu_WIFI_LowCPU_page_pass_VU1_Iter0.png (page/pass)" source=console
+time="2025-08-01T21:58:04+05:30" level=info msg="[INFO] [16:28:04] [VU 1] [Iter 0] 🚀 Page performance: 1699ms (Network idle: ✅)" source=console
+time="2025-08-01T21:58:04+05:30" level=info msg="[INFO] [16:28:04] [VU 1] [Iter 0] 📡 No API requests detected" source=console
+time="2025-08-01T21:58:04+05:30" level=info msg="[INFO] [16:28:04] [VU 1] [Iter 0] ✅ Test iteration completed in 3450ms" source=console
+time="2025-08-01T21:58:04+05:30" level=info msg="[INFO] [16:28:04] [VU 1] [Iter 0] 📊 Result: page measurement completed successfully" source=console
+k6 execution completed successfully
+k6 execution output for main page:
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: k6/ui_performance.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+              * ui: 1 iterations shared among 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m01.0s/10m0s  0/1 shared iters
+
+running (00m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m02.0s/10m0s  0/1 shared iters
+
+running (00m03.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m03.0s/10m0s  0/1 shared iters
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......................: 2       0.5125/s
+    checks_succeeded...................: 100.00% 2 out of 2
+    checks_failed......................: 0.00%   0 out of 2
+
+    ✓ HTTP status is 200
+    ✓ HTTP response time < 30000ms
+
+    CUSTOM
+    dom_content_loaded_time.................................................: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s      
+    main_page_load_time.....................................................: avg=1.69s    min=1.69s    med=1.69s    max=1.69s    p(90)=1.69s    p(95)=1.69s   
+    network_idle_time.......................................................: avg=1.69s    min=1.69s    med=1.69s    max=1.69s    p(90)=1.69s    p(95)=1.69s   
+
+    HTTP
+    http_req_duration.......................................................: avg=200.96ms min=200.96ms med=200.96ms max=200.96ms p(90)=200.96ms p(95)=200.96ms
+      { expected_response:true }............................................: avg=200.96ms min=200.96ms med=200.96ms max=200.96ms p(90)=200.96ms p(95)=200.96ms
+    http_req_failed.........................................................: 0.00%  0 out of 1
+    http_reqs...............................................................: 1      0.25625/s
+
+    EXECUTION
+    iteration_duration......................................................: avg=3.52s    min=3.52s    med=3.52s    max=3.52s    p(90)=3.52s    p(95)=3.52s   
+    iterations..............................................................: 1      0.25625/s
+    vus.....................................................................: 1      min=1       max=1
+    vus_max.................................................................: 1      min=1       max=1
+
+    NETWORK
+    data_received...........................................................: 25 kB  6.5 kB/s
+    data_sent...............................................................: 703 B  180 B/s
+
+    BROWSER
+    browser_data_received...................................................: 2.5 MB 628 kB/s
+    browser_data_sent.......................................................: 24 kB  6.0 kB/s
+    browser_http_req_duration...............................................: avg=98.52ms  min=8.61ms   med=85.01ms  max=338.84ms p(90)=210.17ms p(95)=244.37ms
+    browser_http_req_failed.................................................: 0.00%  0 out of 38
+
+    WEB_VITALS
+    browser_web_vital_cls...................................................: avg=0        min=0        med=0        max=0        p(90)=0        p(95)=0       
+    browser_web_vital_fcp...................................................: avg=600ms    min=600ms    med=600ms    max=600ms    p(90)=600ms    p(95)=600ms   
+    browser_web_vital_lcp...................................................: avg=1.18s    min=1.18s    med=1.18s    max=1.18s    p(90)=1.18s    p(95)=1.18s   
+    browser_web_vital_ttfb..................................................: avg=330.1ms  min=330.1ms  med=330.1ms  max=330.1ms  p(90)=330.1ms  p(95)=330.1ms 
+
+
+
+
+running (00m03.9s), 0/1 VUs, 1 complete and 0 interrupted iterations
+ui   ✓ [ 100% ] 1 VUs  00m03.9s/10m0s  1/1 shared iters
+
+.Main page load time: 1.69s (limit: 6s)
+.=== COMPLETED SCENARIO: Load Google homepage and measure page load time with CPU throttling - STATUS: PASSED ===
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+.🌐 Network Condition: WiFi Network Profile
+.💻 CPU Condition: High CPU Performance (No throttling)
+.=== STARTING SCENARIO: Load Google search components and measure performance ===
+🏷️ Associated Tags: @WIFI, @HighCPU
+🔧 Active Network Simulation: WiFi Network Profile
+🔧 Active CPU Simulation: High CPU Performance (No throttling)
+..Running k6 for subcomponent: body with TEST_URL="https://www.google.com"
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] 🚀 Starting k6 UI Performance Test" source=console
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] 📋 Test URL: https://www.google.com" source=console
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] 👥 VUs: 1, Iterations: 1" source=console
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] ⚙️ Features - Screenshots: true, Network Logging: true, Highlighting: true" source=console
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] ✅ Environment validation completed" source=console
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] 🌐 HTTP Status: 200 (✅)" source=console
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] ⏱️ HTTP Response: 199.8178ms (✅)" source=console
+time="2025-08-01T21:58:05+05:30" level=info msg="[INFO] [16:28:05] [VU 1] [Iter 0] 🚀 Navigating to: https://www.google.com" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] 🎯 Measuring subcomponent: body" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] 🎯 Measuring component performance: body" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] 📝 Expected text: \"Google\"" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] 🎯 Validating component: \"body\"" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] 📝 Expected text: \"Google\"" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] ✅ Component is visible" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] ✅ Component is enabled" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] ✅ Component is interactable" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] ✅ Component paint work completed" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] ✅ Component contains expected text" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] ✅ Expected text is visible" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] ✅ All component checks passed" source=console
+time="2025-08-01T21:58:06+05:30" level=info msg="[INFO] [16:28:06] [VU 1] [Iter 0] 🎯 Component load time: 224ms" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] 📸 Screenshot saved: screenshots/2025-08-01T16-28-06_Load_Google_search_components__WIFI_HighCPU_component_pass_Google_VU1_Iter0.png (component/pass)" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] 🎯 Subcomponent performance: 224ms" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] 📡 No API requests detected" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] ✅ Test iteration completed in 2582ms" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] 📊 Result: component measurement completed successfully" source=console
+Subcomponent body test completed successfully
+k6 execution output for body:
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: k6/ui_performance.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+              * ui: 1 iterations shared among 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m01.0s/10m0s  0/1 shared iters
+
+running (00m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m02.0s/10m0s  0/1 shared iters
+
+running (00m03.0s), 0/1 VUs, 1 complete and 0 interrupted iterations
+ui   ✓ [ 100% ] 1 VUs  00m03.0s/10m0s  1/1 shared iters
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......................: 8       2.671878/s
+    checks_succeeded...................: 100.00% 8 out of 8
+    checks_failed......................: 0.00%   0 out of 8
+
+    ✓ HTTP status is 200
+    ✓ HTTP response time < 30000ms
+    ✓ Component is visible
+    ✓ Component is enabled
+    ✓ Component is interactable
+    ✓ Component paint work completed
+    ✓ Component contains expected text
+    ✓ Expected text is visible
+
+    CUSTOM
+    subcomponent_load_time..................................................: avg=224ms    min=224ms    med=224ms    max=224ms    p(90)=224ms    p(95)=224ms   
+
+    HTTP
+    http_req_duration.......................................................: avg=199.81ms min=199.81ms med=199.81ms max=199.81ms p(90)=199.81ms p(95)=199.81ms
+      { expected_response:true }............................................: avg=199.81ms min=199.81ms med=199.81ms max=199.81ms p(90)=199.81ms p(95)=199.81ms
+    http_req_failed.........................................................: 0.00%  0 out of 1
+    http_reqs...............................................................: 1      0.333985/s
+
+    EXECUTION
+    iteration_duration......................................................: avg=2.65s    min=2.65s    med=2.65s    max=2.65s    p(90)=2.65s    p(95)=2.65s   
+    iterations..............................................................: 1      0.333985/s
+    vus.....................................................................: 1      min=1       max=1
+    vus_max.................................................................: 1      min=1       max=1
+
+    NETWORK
+    data_received...........................................................: 25 kB  8.5 kB/s
+    data_sent...............................................................: 703 B  235 B/s
+
+    BROWSER
+    browser_data_received...................................................: 2.4 MB 817 kB/s
+    browser_data_sent.......................................................: 24 kB  7.9 kB/s
+    browser_http_req_duration...............................................: avg=94.19ms  min=7.64ms   med=87.18ms  max=303.54ms p(90)=163.46ms p(95)=250.1ms 
+    browser_http_req_failed.................................................: 0.00%  0 out of 38
+
+    WEB_VITALS
+    browser_web_vital_cls...................................................: avg=0.000914 min=0.000914 med=0.000914 max=0.000914 p(90)=0.000914 p(95)=0.000914
+    browser_web_vital_fcp...................................................: avg=572ms    min=572ms    med=572ms    max=572ms    p(90)=572ms    p(95)=572ms   
+    browser_web_vital_lcp...................................................: avg=1.02s    min=1.02s    med=1.02s    max=1.02s    p(90)=1.02s    p(95)=1.02s   
+    browser_web_vital_ttfb..................................................: avg=253.09ms min=253.09ms med=253.09ms max=253.09ms p(90)=253.09ms p(95)=253.09ms
+
+
+
+
+running (00m03.0s), 0/1 VUs, 1 complete and 0 interrupted iterations
+ui   ✓ [ 100% ] 1 VUs  00m03.0s/10m0s  1/1 shared iters
+
+.Subcomponent body load time: 0.22s (limit: 6s)
+.=== COMPLETED SCENARIO: Load Google search components and measure performance - STATUS: PASSED ===
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+.🌐 Network Condition: Regular 4G Network Profile
+.💻 CPU Condition: High CPU Performance (No throttling)
+.=== STARTING SCENARIO: Load Google search components with 4G network ===
+🏷️ Associated Tags: @4G, @HighCPU
+🔧 Active Network Simulation: Regular 4G Network Profile
+🔧 Active CPU Simulation: High CPU Performance (No throttling)
+..Running k6 for subcomponent: body with TEST_URL="https://www.google.com"
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] 🚀 Starting k6 UI Performance Test" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] 📋 Test URL: https://www.google.com" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] 👥 VUs: 1, Iterations: 1" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] ⚙️ Features - Screenshots: true, Network Logging: true, Highlighting: true" source=console
+time="2025-08-01T21:58:08+05:30" level=info msg="[INFO] [16:28:08] [VU 1] [Iter 0] ✅ Environment validation completed" source=console
+time="2025-08-01T21:58:09+05:30" level=info msg="[INFO] [16:28:09] [VU 1] [Iter 0] 🌐 HTTP Status: 200 (✅)" source=console
+time="2025-08-01T21:58:09+05:30" level=info msg="[INFO] [16:28:09] [VU 1] [Iter 0] ⏱️ HTTP Response: 195.2623ms (✅)" source=console
+time="2025-08-01T21:58:09+05:30" level=info msg="[INFO] [16:28:09] [VU 1] [Iter 0] 🚀 Navigating to: https://www.google.com" source=console
+time="2025-08-01T21:58:09+05:30" level=info msg="[INFO] [16:28:09] [VU 1] [Iter 0] 🌐 Applying 4G network simulation" source=console
+time="2025-08-01T21:58:09+05:30" level=warning msg="[WARN] [16:28:09] [VU 1] [Iter 0] Could not apply simulation conditions: Object has no member 'emulateNetworkConditions'" source=console
+time="2025-08-01T21:58:09+05:30" level=info msg="[INFO] [16:28:09] [VU 1] [Iter 0] 🎯 Measuring subcomponent: body" source=console
+time="2025-08-01T21:58:09+05:30" level=info msg="[INFO] [16:28:09] [VU 1] [Iter 0] 🎯 Measuring component performance: body" source=console
+time="2025-08-01T21:58:09+05:30" level=info msg="[INFO] [16:28:09] [VU 1] [Iter 0] 📝 Expected text: \"Google\"" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] 🎯 Validating component: \"body\"" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] 📝 Expected text: \"Google\"" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] ✅ Component is visible" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] ✅ Component is enabled" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] ✅ Component is interactable" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] ✅ Component paint work completed" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] ✅ Component contains expected text" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] ✅ Expected text is visible" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] ✅ All component checks passed" source=console
+time="2025-08-01T21:58:10+05:30" level=info msg="[INFO] [16:28:10] [VU 1] [Iter 0] 🎯 Component load time: 148ms" source=console
+time="2025-08-01T21:58:11+05:30" level=info msg="[INFO] [16:28:11] [VU 1] [Iter 0] 📸 Screenshot saved: screenshots/2025-08-01T16-28-10_Load_Google_search_components__4G_HighCPU_component_pass_Google_VU1_Iter0.png (component/pass)" source=console
+time="2025-08-01T21:58:11+05:30" level=info msg="[INFO] [16:28:11] [VU 1] [Iter 0] 🎯 Subcomponent performance: 148ms" source=console
+time="2025-08-01T21:58:11+05:30" level=info msg="[INFO] [16:28:11] [VU 1] [Iter 0] 📡 No API requests detected" source=console
+time="2025-08-01T21:58:11+05:30" level=info msg="[INFO] [16:28:11] [VU 1] [Iter 0] ✅ Test iteration completed in 2533ms" source=console
+time="2025-08-01T21:58:11+05:30" level=info msg="[INFO] [16:28:11] [VU 1] [Iter 0] 📊 Result: component measurement completed successfully" source=console
+Subcomponent body test completed successfully
+k6 execution output for body:
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+     execution: local
+        script: k6/ui_performance.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+              * ui: 1 iterations shared among 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m01.0s/10m0s  0/1 shared iters
+
+running (00m02.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+ui     [   0% ] 1 VUs  00m02.0s/10m0s  0/1 shared iters
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......................: 8       2.703314/s
+    checks_succeeded...................: 100.00% 8 out of 8
+    checks_failed......................: 0.00%   0 out of 8
+
+    ✓ HTTP status is 200
+    ✓ HTTP response time < 30000ms
+    ✓ Component is visible
+    ✓ Component is enabled
+    ✓ Component is interactable
+    ✓ Component paint work completed
+    ✓ Component contains expected text
+    ✓ Expected text is visible
+
+    CUSTOM
+    subcomponent_load_time..................................................: avg=148ms    min=148ms    med=148ms    max=148ms    p(90)=148ms    p(95)=148ms   
+
+    HTTP
+    http_req_duration.......................................................: avg=195.26ms min=195.26ms med=195.26ms max=195.26ms p(90)=195.26ms p(95)=195.26ms
+      { expected_response:true }............................................: avg=195.26ms min=195.26ms med=195.26ms max=195.26ms p(90)=195.26ms p(95)=195.26ms
+    http_req_failed.........................................................: 0.00%  0 out of 1
+    http_reqs...............................................................: 1      0.337914/s
+
+    EXECUTION
+    iteration_duration......................................................: avg=2.61s    min=2.61s    med=2.61s    max=2.61s    p(90)=2.61s    p(95)=2.61s   
+    iterations..............................................................: 1      0.337914/s
+    vus.....................................................................: 1      min=1       max=1
+    vus_max.................................................................: 1      min=1       max=1
+
+    NETWORK
+    data_received...........................................................: 25 kB  8.6 kB/s
+    data_sent...............................................................: 703 B  238 B/s
+
+    BROWSER
+    browser_data_received...................................................: 2.5 MB 838 kB/s
+    browser_data_sent.......................................................: 24 kB  8.0 kB/s
+    browser_http_req_duration...............................................: avg=90.74ms  min=9.64ms   med=81.64ms  max=335.4ms  p(90)=184.59ms p(95)=228.51ms
+    browser_http_req_failed.................................................: 0.00%  0 out of 39
+
+    WEB_VITALS
+    browser_web_vital_cls...................................................: avg=0.000914 min=0.000914 med=0.000914 max=0.000914 p(90)=0.000914 p(95)=0.000914
+    browser_web_vital_fcp...................................................: avg=580ms    min=580ms    med=580ms    max=580ms    p(90)=580ms    p(95)=580ms   
+    browser_web_vital_lcp...................................................: avg=1.03s    min=1.03s    med=1.03s    max=1.03s    p(90)=1.03s    p(95)=1.03s   
+    browser_web_vital_ttfb..................................................: avg=236.89ms min=236.89ms med=236.89ms max=236.89ms p(90)=236.89ms p(95)=236.89ms
+
+
+
+
+running (00m03.0s), 0/1 VUs, 1 complete and 0 interrupted iterations
+ui   ✓ [ 100% ] 1 VUs  00m03.0s/10m0s  1/1 shared iters
+
+.Subcomponent body load time: 0.15s (limit: 6s)
+.=== COMPLETED SCENARIO: Load Google search components with 4G network - STATUS: PASSED ===
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+.
+
+6 scenarios (6 passed)
+18 steps (18 passed)
+0m25.100s (executing steps: 0m25.082s)
